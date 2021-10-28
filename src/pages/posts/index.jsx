@@ -12,10 +12,9 @@ export default function Posts(props) {
       
 
     <main className={styles.container}>
-      
       <div className={styles.postList}>
+
         <h1>Blog! Incríveis experiências.</h1>
-        
         {props.posts.map(post => (
 
           <Link href={`/posts/${post.slug}`}>
@@ -25,7 +24,6 @@ export default function Posts(props) {
             <p>{post.sumary}</p>
             </a>
           </Link>
-
         ))}
         
       </div>
@@ -38,8 +36,6 @@ export default function Posts(props) {
 
 export const getStaticProps = async () => {
   const prismic = getPrismicClient()
-
-
   const response = await prismic.query(
     [
       Prismic.predicates.at("document.type", "post")

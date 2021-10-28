@@ -3,17 +3,16 @@ import styles from "./flights.module.scss"
 
 export default function Flights(props) {
   return (
-    <main className={styles.container}>
-      <title>Posts - Viajens</title>
+    <div className={styles.container}>
       {
         props.flights.map(flight => (
-          <div className="flight">
+          <div key={flight.flight.number} className="flight">
             <span>{flight.flight.airline_name}</span>
 
             <section className="departure">
               <h1>Origem: {flight.departure.iata}</h1>
-              <h2>Data-hora saida: {
-              new Date(flight.arrival.scheduled).toLocaleDateString("pt-BR", {
+              <h2>Data-hora saida: {" " +
+              new Date(flight.arrival.scheduled).toLocaleDateString("pt-BR", {    //toDo transferir tratamento da data para server side
                 day: "2-digit",
                 month: "2-digit",
                 year: "numeric",
@@ -24,8 +23,8 @@ export default function Flights(props) {
             </section>
             <section className="arrival">
               <h1> Destino: {flight.arrival.iata}</h1>
-              <h2> Data-hora chegada:
-                {new Date(flight.arrival.scheduled).toLocaleDateString("pt-BR", {
+              <h2> Data-hora chegada:{" " +
+                    new Date(flight.arrival.scheduled).toLocaleDateString("pt-BR", {         //toDo transferir tratamento da data para server side 
                     day: "2-digit",
                     month: "2-digit",
                     year: "numeric",
@@ -38,9 +37,7 @@ export default function Flights(props) {
           </div>
         ))
       }
-
-
-    </main>
+    </div>
   )
 }
 
@@ -51,7 +48,7 @@ export const getServerSideProps = async () => {
     let departure = "CWB"
     let arrival = "GRU"
 
-    //const result = await fetch(`${process.env.FLIGHT_ENDPOINT}&limit=${limit}&dep_iata=${departure}&arr_iata=${arrival}`);
+    const result = await fetch(`${process.env.FLIGHT_ENDPOINT}&limit=${limit}&dep_iata=${departure}&arr_iata=${arrival}`);
     const fetchData = await result.json();
     console.log(fetchData) 
 

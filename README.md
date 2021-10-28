@@ -1,42 +1,28 @@
 ##
 
 
-# Read Me Template
-
 ![Project Image](project-image-url)
 
-> This is a ReadMe template to help save you time and effort.
-
----
-
-### Table of Contents
-You're sections headers will be used to reference location of destination.
-
-- [Description](#description)
-- [How To Use](#how-to-use)
-- [References](#references)
-- [License](#license)
-- [Author Info](#author-info)
-
----
 
 ## Description
 
-Creating ReadMe's for your Github repository can be tedious.  I hope this template can save you time and effort as well as provide you with some consistency across your projects.
+    -Site desenvolvido inicialmente como blog apenas para posts, mas ao identificar a possibilidade
+    de incluir informações sobre voos, moedas e hoteis, acabei pesquisando APIs que fornecessem esse
+    tipo de informação.
+
+    Utilizei o Prismic CMS para fazer a construção dos posts e itens em loja, além das APIs Aviationstack para
+    consultar voos e awesomeApi para cotações.
+
+    Se tiver alguma dúvida ou sugestão sobre o projeto, não deixe de entrar em contato :)
 
 #### Technologies
 
 - Next JS
 - SCSS
 - Prismic CMS
--
+- REST API
 
 
-[Back To The Top](#read-me-template)
-
----
-
-## How To Use
 
 #### Installation
 
@@ -44,14 +30,19 @@ Creating ReadMe's for your Github repository can be tedious.  I hope this templa
 `yarn add @prismicio/client`
 
 
-[Back To The Top](#read-me-template)
 
----
+## APIs utilizadas
 
-## References
-[Back To The Top](#read-me-template)
+### Aviationstack
+    -API REST utilizada no componente Flights para consulta de vôos.
+    A mesma retorna informações baseadas nos query params enviados para que possamos filtrar
+    origens, destinos, datas e outras informações.
 
----
+### Awesomeapi - Cotações
+    -API REST utilizada para consultar cotação de moedas no componente Currency.
+    Também há a possíbilidade de adicionar outras comparações, inclusive com criptomoedas.
+
+
 
 ## License
 
@@ -77,13 +68,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#read-me-template)
-
----
 
 ## Author Info
 
 - Linkedin - [William Kszan](https://www.linkedin.com/in/william-kszan-79b292105/)
 - Website - [William Front-end Dev](https://verthos.github.io/meu-portfolio/)
 
-[Back To The Top](#read-me-template)

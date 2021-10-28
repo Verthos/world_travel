@@ -35,7 +35,7 @@ export function Header() {
                         <Link href="/" ><a>Home</a></Link>
                         <Link href="/destinos"><a>Destinos</a></Link>
                         <Link href="/posts"><a>Blog</a></Link>
-                        <Link href="roteiros"><a>Roteiros</a></Link>
+                        <Link href="/roteiros"><a>Roteiros</a></Link>
                         <Link href="/sobre"><a>Sobre</a></Link>
                         <Link href="/shop"><a>Loja</a></Link>
                     </ul>

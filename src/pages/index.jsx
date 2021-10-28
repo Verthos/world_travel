@@ -9,12 +9,12 @@ export default function Home({posts}) {
 
         posts.map(post => {
           return(
-            <>
+            <div key={post.slug}>
             <img src={post.img} alt="location image" />
             <h1>{post.title}</h1>
             <h3>{post.updatedAt}</h3>
             <p>{post.content}</p>
-            </>
+            </div>
           )
         })
 
@@ -50,7 +50,6 @@ export const getStaticProps = async () => {
       })
     }
   })
-
 
 
   return{

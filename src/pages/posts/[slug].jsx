@@ -1,6 +1,6 @@
 import { getPrismicClient } from "../../services/prismic"
 import { RichText } from "prismic-dom"
-import styles from "./styles.module.scss"
+import styles from "./posts.module.scss"
 
 export default function Post({post}){
     return(
