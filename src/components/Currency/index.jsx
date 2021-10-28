@@ -54,7 +54,7 @@ export function UpdatedCurrency(){
 
 
   return(
-    <div class={styles.container}>
+    <div className={styles.container}>
         <div className="coin">
             <span>{currency.USDBRL.code + " / " + currency.USDBRL.codein}</span>
             <h3>{currency.USDBRL.low}</h3>
