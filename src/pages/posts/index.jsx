@@ -16,14 +16,17 @@ export default function Posts(props) {
 
         <h1>Blog! Incríveis experiências.</h1>
         {props.posts.map(post => (
-
-          <Link href={`/posts/${post.slug}`}>
-            <a key={post.slug}>
+          <div key={post.slug} className={styles.post}>
+            <Link href={`/posts/${post.slug}`}>
+            <a>
             <time>{post.updatedAt}</time>
             <strong>{post.title}</strong>
             <p>{post.sumary}</p>
             </a>
           </Link>
+
+          </div>
+          
         ))}
         
       </div>
