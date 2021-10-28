@@ -1,0 +1,56 @@
+.Styledfooter{
+    background-color: var(--gray-300);
+    min-height: 60vh;
+    bottom: 0;
+    padding-top: 2rem;
+    justify-content: center;
+    display: grid;
+}
+
+
+.socialDiv{
+    display: flex;
+    justify-content: center;
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    .instagram{
+        color: white;
+        position: relative;
+        transition: filter 0.3s;
+        transition: transform 1s;
+
+        &:hover{
+            filter: brightness(1.2);
+            transform: skew(20deg, -20deg);
+        }
+    }
+
+    .linkedin{
+        color: #006fe9;
+        position: relative;
+        transition: filter 0.3s;
+        transition: transform 1s;
+        
+        &:hover{
+            filter: brightness(1.2);
+            transform: skew(20deg, -20deg);
+            
+        }
+    }
+    .github{
+        color: #cccccc;
+        position: relative;
+        transition: filter 0.3s;
+        transition: transform 1s;
+
+        &:hover{
+            filter: brightness(1.2);
+            transform: skew(20deg, -20deg);
+        }
+        
+    }
+}
+
+    

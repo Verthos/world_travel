@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    position: absolute;
+    background: var(--white);
+    color: var(--gray-900);
+    bottom:12rem;
+    left: 2rem;
+    font-size: 1rem;
+    box-shadow: 2px 3px 1rem black;
+    border-radius: 0.5rem;
+
+
+
+    div{
+        margin: 0 1rem;
+        font-size: 1rem;
+        h3{
+            font-size: 1rem;
+        }
+
+    }    
+    
+}

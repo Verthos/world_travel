@@ -1,0 +1,82 @@
+
+.header{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    background-image: url("../../assets/wallpaper.jpg");
+    background-size: 1920px;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    border-radius: 0% 0% 30% 30% / 0% 0% 6% 6%;
+    
+    
+    h1{
+        font-size: 7rem;
+        font-family: "Chango" sans-serif;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    text-decoration: none;
+    list-style: none;
+    
+    li{
+        list-style: none;
+    }
+
+
+    .navDiv{
+        height: 3rem;
+        width: 35%;
+        position: relative;
+        margin-top: 3rem;
+        font-weight: bold;
+        backdrop-filter: blur(0.2rem);
+
+        ul{
+            position: sticky;
+            display: flex;
+            justify-content: space-evenly;
+            background: rgba(255, 255, 240, 0.4);
+            border-radius: 1rem;
+            
+            a{
+                padding: 1rem;
+                text-align: center;
+                height: 3rem;
+                
+            
+                &:hover{
+                    transform: perspective(400px) translateZ(2rem);
+                    transition: all 0.5s;     
+                    background: rgba(167, 175, 223, 0.3);
+                    box-shadow: 0.2px 0.2px 0.5rem white
+                }
+
+
+            };
+        }
+    }    
+}
+
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+
+    @media (max-width: 768px){
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
