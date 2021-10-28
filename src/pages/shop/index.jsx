@@ -19,7 +19,14 @@ export default function Items(props) {
       ou até mesmo sinal para celular. Por isso, leve baterias extras, acessórios que funcionem com luz solar, 
       mapas (ou bússola se achar melhor) e um bom kit de primeiros socorros, porque nunca se sabe se você precisará de um curativo rápido.
       </p>
-
+      {props.shopItems.map(item => {
+        return(
+          <div key={item.slug}>
+            <h2>{item.title}</h2>
+            <Link href="url"><img src={item.img} alt="item_image" /></Link>
+          </div>  
+        )
+      })}
       
 
       </div>

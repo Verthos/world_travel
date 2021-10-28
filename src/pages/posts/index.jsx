@@ -37,6 +37,14 @@ export default function Posts(props) {
 }
 
 
+export const getStaticPaths = () => {
+  return{
+    paths: [],
+    fallback: "blocking"
+  }
+}
+
+
 export const getStaticProps = async () => {
   const prismic = getPrismicClient()
   const response = await prismic.query(
@@ -67,7 +75,8 @@ export const getStaticProps = async () => {
   return{
     props:{
       posts
-    }
+    },
+    revalidate: 86.400
   }
 }
 
