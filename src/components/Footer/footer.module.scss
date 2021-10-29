@@ -1,10 +1,19 @@
+
+
+
+
 .Styledfooter{
     background-color: var(--gray-300);
     min-height: 60vh;
-    bottom: 0;
     padding-top: 2rem;
     justify-content: center;
     display: grid;
+
+
+
+    p{
+        bottom: 2rem;
+    }
 }
 
 
@@ -52,5 +61,7 @@
         
     }
 }
+
+
 
     

@@ -1,5 +1,4 @@
 import Document, {Html, Head, Main, NextScript} from 'next/document';
-import { UpdatedCurrency } from '../components/Currency';
 
 class MyDocument extends Document {
     static async getInitialProps(ctx) {

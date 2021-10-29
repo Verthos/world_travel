@@ -23,6 +23,9 @@ export function Footer() {
                         <FontAwesomeIcon icon={faInstagram} size="3x"/>
                         
                     </a>
+
+                    <p>Roteiros e Dicas | Desenvolvido por William Kszan.</p>
+                     
     
                 </div>
                 

@@ -32,12 +32,12 @@ export function Header() {
 
                 <div className={styles.navDiv}>
                     <ul>
-                        <Link href="/" ><a>Home</a></Link>
-                        <Link href="/destinos"><a>Destinos</a></Link>
-                        <Link href="/posts"><a>Blog</a></Link>
-                        <Link href="/roteiros"><a>Roteiros</a></Link>
-                        <Link href="/sobre"><a>Sobre</a></Link>
-                        <Link href="/shop"><a>Loja</a></Link>
+                        <Link scroll={false} href="/posts/quem-sou-eu" ><a>Home</a></Link>
+                        <Link scroll={false} href="/flights"><a>Encontre voos</a></Link>
+                        <Link scroll={false} href="/posts"><a>Blog</a></Link>
+                        <Link scroll={false} href="/roteiros"><a>Roteiros</a></Link>
+                        <Link scroll={false} href="/sobre"><a>Sobre</a></Link>
+                        <Link scroll={false} href="/shop"><a>Loja</a></Link>
                     </ul>
                 </div>
             </header>
