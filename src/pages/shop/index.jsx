@@ -50,14 +50,11 @@ export const getStaticProps = async () => {
     }
     
   )
-
-    console.log(response.results)
-  const shopItems = response.results.map(shopItem => {
+    const shopItems = response.results.map(shopItem => {
     return{
       slug: shopItem.uid,
       title: RichText.asText(shopItem.data.title),
       img: shopItem.data.content.find(content => content.type == "image").url,
-
     }
   })
 
