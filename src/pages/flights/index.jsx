@@ -44,9 +44,10 @@ export default function Flights(props) {
 
 export const getServerSideProps = async () => {
 
-    let limit = 10
-    let departure = "CWB"
-    let arrival = "GRU"
+    const limit = 10
+    const departure = "CWB"
+    const arrival = "GRU"
+
 
     const result = await fetch(`${process.env.FLIGHT_ENDPOINT}&limit=${limit}&dep_iata=${departure}&arr_iata=${arrival}`);
     const fetchData = await result.json();

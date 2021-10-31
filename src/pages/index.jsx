@@ -4,12 +4,12 @@ import {RichText} from "prismic-dom"
 export default function Home({post}) {
 
   return (
-    <>
-      <img src={post.img} alt="location image" />
-      <h1>{post.title}</h1>
-      <h3>{post.updatedAt}</h3>
-      {post.content}
-    </>     
+        <>
+          <img src={post.img} alt="location image" />
+          <h1>{post.title}</h1>
+          <h3>{post.updatedAt}</h3>
+          {post.content}
+        </>     
       )
 }
 
@@ -17,12 +17,8 @@ export default function Home({post}) {
 export const getStaticProps = async () => {
   const prismic = getPrismicClient()
 
-
-
   const response = await prismic.getByUID("post", "quem-sou-eu", {})
   
-  
-
 
   const post = {
     title: RichText.asText(response.data.title),

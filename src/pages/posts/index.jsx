@@ -10,7 +10,6 @@ export default function Posts(props) {
     <>
       <title>Posts - Viajens</title>
       
-
     <main className={styles.container}>
       <div className={styles.postList}>
 
@@ -24,11 +23,8 @@ export default function Posts(props) {
             <p>{post.sumary}</p>
             </a>
           </Link>
-
           </div>
-          
         ))}
-        
       </div>
     </main>
     </>
